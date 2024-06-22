@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <img src="assets/images/sunflower.png" alt="background" class="background-image">
+            <div class="overlay"></div>
+            <div class="text">
+                <h2 class="title">Work with us</h2>
+                <p class="des">Join our dynamic team dedicated to excellence. You'll find a supportive environment
+                    fostering growth and creativity. Together, we achieve great things. Let's shape a better future.</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <p class="sign-up">Don’t have an account? <a href="#">Sign up</a></p>
+            <div class="Login">
+                <h3>Welcome back!</h3>
+                <div class="link">
+                    <img src="assets/images/google.png" alt="google-logo">
+                    <a href="#" class="google">Continue with Google</a>
+                </div>
+                <div class="link">
+                    <img src="assets/images/twitter.png" alt="twitter-logo">
+                    <a href="#" class="google">Continue with Twitter</a>
+                </div>
+                <div class="horizontal">
+                    <p class="OR">OR</p>
+                </div>
+                <form id="loginForm" action="#" method="#">
+                    <div class="form-group">
+                        <label for="email">Enter your email address</label>
+                        <input type="email" id="email" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="password">
+                            <label for="password">Enter your password</label>
+                            <div class="icon" onclick="togglePassword()">
+                                <i class="fa-solid fa-eye-slash" id="toggleIcon"></i>
+                            </div>
+                        </div>
+                        <input type="password" id="password" required>
+                        <span class="error" id="passwordError"></span>
+                        <a href="#" class="forget-pass">Forget your password?</a>
+                    </div>
+                    <input class="btn" type="submit" value="Sign in">
+                    <span class="creat-account">Don’t have an account? <a href="#">Sign up</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
